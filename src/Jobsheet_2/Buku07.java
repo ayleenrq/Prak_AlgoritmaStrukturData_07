@@ -26,6 +26,10 @@ public class Buku07 {
         harga = hrg;
     }
 
+    public Buku07() {
+
+    }
+
     public Buku07(String jud, String pg, int hal, int stok, int har) {
         judul = jud;
         pengarang = pg;

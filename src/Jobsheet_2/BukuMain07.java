@@ -17,5 +17,9 @@ public class BukuMain07 {
         Buku07 bk2 = new Buku07("Self Reward", "Maheera Ayesha", 160, 29, 59000);
         bk2.terjual(11);
         bk2.tampilInformasi();
+
+        Buku07 bukuAyleen = new Buku07("Sains", "Ayleen Ruhul Qisthy", 236, 17, 99000);
+        bukuAyleen.terjual(6);
+        bukuAyleen.tampilInformasi();
     }
 }
