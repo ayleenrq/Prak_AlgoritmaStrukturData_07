@@ -22,7 +22,7 @@ public class Buku07 {
         stok += jml;
     }
 
-    void gantiHarga ( int hrg) {
+    void gantiHarga (int hrg) {
         harga = hrg;
     }
 
@@ -36,5 +36,23 @@ public class Buku07 {
         halaman = hal;
         this.stok = stok;
         harga = har;
+    }
+
+    int hitungHargaTotal(int jml) {
+        return harga * jml;
+    }
+
+    int hitungDiskon(int hargaTotal) {
+        if (hargaTotal > 150000) {
+            return (int) (hargaTotal * 0.12);
+        } else if (hargaTotal >= 75000 && hargaTotal <= 150000) {
+            return (int) (hargaTotal * 0.05);
+        } else {
+            return 0;
+        }
+    }
+
+    int hitungHargaBayar(int hargaTotal, double diskon) {
+        return hargaTotal - (int) diskon;
     }
 }
