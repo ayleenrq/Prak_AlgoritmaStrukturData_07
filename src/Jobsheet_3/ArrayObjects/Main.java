@@ -4,20 +4,27 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner ayleen07 = new Scanner(System.in);
-        PersegiPanjang[] ppArray = new PersegiPanjang[3];
+        PersegiPanjang[][] ppArray = new PersegiPanjang[2][2];
 
         for (int i = 0; i < ppArray.length; i++) {
-            ppArray[i] = new PersegiPanjang();
-            System.out.println("Persegi panjang ke-" + i);
-            System.out.print("Masukkan panjang : ");
-            ppArray[i].panjang = ayleen07.nextInt();
-            System.out.print("Masukkan lenar : ");
-            ppArray[i].lebar = ayleen07.nextInt();
+            for (int j = 0; j < ppArray[i].length; j++) {
+                ppArray[i][j] = new PersegiPanjang(i, j);
+                System.out.println("Persegi panjang ke-" + (i * ppArray[i].length + j + 1));
+
+                System.out.print("Masukkan panjang : ");
+                ppArray[i][j].panjang = ayleen07.nextInt();
+
+                System.out.print("Masukkan lebar : ");
+                ppArray[i][j].lebar = ayleen07.nextInt();
+            }
         }
-
+        System.out.println();
+        
         for (int i = 0; i < ppArray.length; i++) {
-            System.out.println("Persegi Panjang ke-" + i);
-            System.out.println("Panjang : " + ppArray[i].panjang + ", lebar : " + ppArray[i].lebar);
+            for (int j = 0; j < ppArray[i].length; j++) {
+                System.out.println("Persegi panjang ke-" + (i * ppArray[i].length + j + 1));
+                System.out.println("Panjang : " + ppArray[i][j].panjang + ", lebar : " + ppArray[i][j].lebar);
+            }
         }
     }
 }
