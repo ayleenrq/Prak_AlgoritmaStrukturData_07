@@ -8,4 +8,11 @@ public class Segitiga {
         alas = t;
         tinggi = t;
     }
+    public double hitungLuas() {
+        return 0.5 * alas * tinggi;
+    }
+    public double hitungKeliling() {
+        int sisiMiring = (int) Math.sqrt(Math.pow(alas,2) + Math.pow(tinggi,2));
+        return alas + tinggi + sisiMiring;
+    }
 }
