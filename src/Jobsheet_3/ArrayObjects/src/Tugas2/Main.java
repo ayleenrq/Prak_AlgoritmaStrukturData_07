@@ -33,5 +33,10 @@ public class Main {
             System.out.println("IPK           : " + mahasiswa[i].ipk);
             System.out.println();
         }
+        double rataIpk = Mahasiswa.rataIPK(mahasiswa);
+        System.out.println("Rata-rata IPK  : " + Math.round(rataIpk * 100.0) / 100.0);
+
+        Mahasiswa maxIpkMahasiswa = Mahasiswa.IPKterbesar(mahasiswa);
+        Mahasiswa.tampilkanIPKterbesar(maxIpkMahasiswa);
     }
 }
