@@ -1,4 +1,4 @@
-package Jobsheet_3.ArrayObjects.src.Segitiga;
+package Jobsheet_3.ArrayObjects.src.ArraySegitiga;
 
 public class Segitiga {
     public int alas;
