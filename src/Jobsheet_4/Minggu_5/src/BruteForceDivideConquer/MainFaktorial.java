@@ -15,13 +15,22 @@ public class MainFaktorial {
             System.out.print("Masukkan nilai data ke-" + (i+1) + " : ");
             fk[i].nilai = ayleen07.nextInt();
         }
-        System.out.println("HASIL - BRUTE FORCE");
+        System.out.println("HASIL - BRUTE FORCE WHILE");
         for (int i = 0; i < ijml; i++) {
-            System.out.println("Hasil perhitungan faktorial menggunakan Brute Force adalah " + fk[i].faktorialBF(fk[i].nilai));
+            System.out.println("Hasil perhitungan faktorial menggunakan Brute Force While adalah " + fk[i].faktorialBF_while(fk[i].nilai));
         }
-        System.out.println("HASIL - DIVIDE AND CONQUER");
+        System.out.println("HASIL - BRUTE FORCE DO - WHILE");
         for (int i = 0; i < ijml; i++) {
-            System.out.println("Hasil perhitungan faktorial menggunakan Divide and Conquer adalah " + fk[i].faktorialDC(fk[i].nilai));
+            System.out.println("Hasil perhitungan faktorial menggunakan Brute Force Do-While adalah " + fk[i].faktorialBF_dowhile(fk[i].nilai));
         }
+        
+        // System.out.println("HASIL - BRUTE FORCE");
+        // for (int i = 0; i < ijml; i++) {
+        //     System.out.println("Hasil perhitungan faktorial menggunakan Brute Force adalah " + fk[i].faktorialBF(fk[i].nilai));
+        // }
+        // System.out.println("HASIL - DIVIDE AND CONQUER");
+        // for (int i = 0; i < ijml; i++) {
+        //     System.out.println("Hasil perhitungan faktorial menggunakan Divide and Conquer adalah " + fk[i].faktorialDC(fk[i].nilai));
+        // }
     }
 }
