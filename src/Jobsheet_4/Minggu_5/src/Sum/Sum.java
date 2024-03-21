@@ -19,11 +19,11 @@ public class Sum {
         if (l == r) {
             return arr[l];
         } else if (l < r) {
-            int mid = (l + r) / 2; 
-            double lsum = totalDC(arr, l, mid);
+            int mid = (l + r) / 2;
+            double lsum = totalDC(arr, l, mid - 1);
             double rsum = totalDC(arr, mid + 1, r);
-            return lsum + rsum;
+            return lsum + rsum + arr[mid];
         }
-        return 0; 
+        return 0;
     }
 }
