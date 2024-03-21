@@ -11,11 +11,11 @@ public class MainPangkat {
 
         Pangkat[] png = new Pangkat[elemen];
         for (int i = 0; i < elemen; i++) {
-            png[i] = new Pangkat();
             System.out.print("Masukkan nilai yang hendak dipangkatkan : ");
-            png[i].nilai = ayleen07.nextInt();
+            int nilai = ayleen07.nextInt();
             System.out.print("Masukkan nilai pemangkat : ");
-            png[i].pangkat = ayleen07.nextInt();
+            int pangkat = ayleen07.nextInt();
+            png[i] = new Pangkat(nilai, pangkat);
         }
         System.out.println("HASIL PANGKAT - BRUTE FORCE");
         for (int i = 0; i < elemen; i++) {
