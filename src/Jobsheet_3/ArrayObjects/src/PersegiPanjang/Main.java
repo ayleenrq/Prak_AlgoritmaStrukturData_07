@@ -12,6 +12,7 @@ public class Main {
 
         for (int i = 0; i < ppArray.length; i++) {
             ppArray[i] = new PersegiPanjang();
+            ppArray[0] = new PersegiPanjang();
             System.out.println("Persegi panjang ke-" + i);
             System.out.print("Masukkan panjang : ");
             ppArray[i].panjang = ayleen07.nextInt();
