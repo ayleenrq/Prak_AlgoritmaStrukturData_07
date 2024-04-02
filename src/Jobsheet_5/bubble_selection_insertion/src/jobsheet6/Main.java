@@ -19,15 +19,23 @@ public class Main {
         System.out.println("Data Mahasiswa sebelum sorting");
         list.tampilMahasiswa();
         
-        System.out.println("Data Mahasiswa setelah sorting (berdasarkan IPK)");
+        System.out.println("Data Mahasiswa setelah sorting asc (berdasarkan IPK)");
+        System.out.println("Bubble Short");
         list.bubbleShort();
         list.tampilMahasiswa();
 
         System.out.println("Data Mahasiswa setelah sorting asc (berdasarkan IPK)");
+        System.out.println("Selection Short");
         list.selectionSort();
         list.tampilMahasiswa();
-
+        
         System.out.println("Data Mahasiswa setelah sorting asc (berdasarkan IPK)");
+        System.out.println("Insertion Short");
+        list.insertionSort();
+        list.tampilMahasiswa();
+
+        System.out.println("Data Mahasiswa setelah sorting des (berdasarkan IPK)");
+        System.out.println("Insertion Short");
         list.insertionSort();
         list.tampilMahasiswa();
     }
