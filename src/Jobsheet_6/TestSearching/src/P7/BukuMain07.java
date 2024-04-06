@@ -49,7 +49,7 @@ public class BukuMain07 {
         dataBuku.TampilDataBuku();
         
         System.out.println("--------------------------------------------------------");
-        System.out.println("Menggunakan Binary Search");
+        System.out.println("Menggunakan Binary Search ( descending )");
         posisi = data.FindBinarySearch(cari, 0, jumBuku - 1);
         data.Tampilposisi(cari, posisi);
         data.TampilData(cari, posisi);
