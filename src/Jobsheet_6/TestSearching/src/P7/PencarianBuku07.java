@@ -27,6 +27,23 @@ public class PencarianBuku07 {
         }
         return posisi;
     }
+    Buku07 FindBuku(int cari) {
+        int posisi = -1;
+        for (int i = 0; i < listBuku.length; i++) {
+            if (listBuku[i].kodeBuku == cari){
+                posisi = i;
+                break;
+            }
+        }
+        System.out.println("=========================");
+        System.out.println("Kode Buku: " + posisi);
+        System.out.println("Judul: " + listBuku[posisi].judul);
+        System.out.println("Tahun terbit: " + listBuku[posisi].tahunTerbit);
+        System.out.println("Pengarang: " + listBuku[posisi].pengarang);
+        System.out.println("Stock: " + listBuku[posisi].stock);
+
+        return listBuku[posisi];
+    }
     void Tampilposisi(int x, int pos) {
         if (pos != -1) {
             System.out.println("data : " + x + " ditemukan pada indeks " + pos);
