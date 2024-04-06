@@ -38,13 +38,20 @@ public class BukuMain07 {
         System.out.println("Masukkan Kode Buku yang dicari : ");
         System.out.print("Kode Buku : ");
         int cari = ayleen07.nextInt();
-
+        
+        System.out.println("--------------------------------------------------------");
         System.out.println("Menggunakan Sequential Search");
         int posisi = data.FindSeqSearch(cari);
         data.Tampilposisi(cari, posisi);
         data.TampilData(cari, posisi);
-
+        
         Buku07 dataBuku = data.FindBuku(cari);
         dataBuku.TampilDataBuku();
+        
+        System.out.println("--------------------------------------------------------");
+        System.out.println("Menggunakan Binary Search");
+        posisi = data.FindBinarySearch(cari, 0, jumBuku - 1);
+        data.Tampilposisi(cari, posisi);
+        data.TampilData(cari, posisi);
     }
 }
