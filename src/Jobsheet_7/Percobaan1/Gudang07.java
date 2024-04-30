@@ -10,7 +10,11 @@ public class Gudang07 {
         top = -1;
     }
     public boolean cekKosong() {
-        
+        if (top == -1) {
+            return true;
+        } else {
+            return false;
+        }
     }
     public boolean cekPenuh() {
         if (top == size - 1) {
