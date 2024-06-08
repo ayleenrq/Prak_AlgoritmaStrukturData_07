@@ -56,4 +56,12 @@ public class Graph07 {
         }
         System.out.println("");
     }
+    public boolean adjacency(int asal, int tujuan) throws Exception {
+        for (int i = 0; i < list07[asal].size(); i++) {
+            if (list07[asal].get(i) == tujuan) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
