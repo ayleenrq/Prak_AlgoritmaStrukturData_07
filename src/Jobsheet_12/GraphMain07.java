@@ -55,8 +55,15 @@ public class GraphMain07 {
         gdg07.makeEdge(2, 3, 40);
         gdg07.makeEdge(3, 0, 90);
         gdg07.printGraph();
+
         System.out.println("Hasil setelah penghapusan edge");
         gdg07.removeEdge(2, 1);
         gdg07.printGraph();
+        
+        System.out.println();
+        System.out.println("+--------------------------------+");
+        System.out.println("[      Degree setiap vertex      ]");
+        System.out.println("+--------------------------------+");
+        gdg07.printDegree();
     }
 }
