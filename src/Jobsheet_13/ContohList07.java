@@ -6,7 +6,7 @@ import java.util.LinkedList;
 
 public class ContohList07 {
     public static void main(String[] args) {
-        List l = new ArrayList();
+        List<Integer> l = new ArrayList();
 
         l.add(1);
         l.add(2);
